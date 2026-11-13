@@ -1,0 +1,13 @@
+VN Studio 1.0.0
+
+Copyright (c) 2026 Taewan Kim. First-party software: MIT; see Licence.txt.
+The year 2026 is the notice year of this MIT distribution, not the initial
+development year. Third-party works retain their own copyright and licenses.
+
+Included Heroicons v2.2.0 SVG geometry: Copyright (c) Tailwind Labs, Inc., MIT.
+See THIRD_PARTY_NOTICES.md, THIRD_PARTY_LICENSES/ and docs/icon-sources.json.
+Installed npm dependencies are not relicensed as first-party MIT.
+
+This source repository contains no installed dependency code, native binaries,
+build artifacts, research records, personal contacts, stock photographs or
+font binaries.

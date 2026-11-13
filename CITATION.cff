@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "VN Studio"
+version: "1.0.0"
+# date-released: set when the v1.0.0 release is published
+# doi: to be added after the Zenodo release
+license: MIT
+repository-code: "https://github.com/Taewan627/vn-studio"
+authors:
+  - family-names: Kim
+    given-names: Taewan
+    affiliation: "Graduate School of Virtual Convergence, Sogang University"
+    orcid: "https://orcid.org/0009-0006-2478-4884"
+  - family-names: Kim
+    given-names: Taehoon
+    affiliation: "Graduate School of Virtual Convergence, Sogang University"
+    orcid: "https://orcid.org/0000-0003-4788-4651"
+abstract: "A local browser-based editor for branching visual-novel prototypes that imports JSON, stores projects in browser storage and exports offline HTML games."
+keywords:
+  - computational narrative
+  - visual novels
+  - branching narrative
+  - research software
+  - offline HTML

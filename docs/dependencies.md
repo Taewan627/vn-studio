@@ -1,0 +1,7 @@
+# Dependencies and redistribution scope
+
+Dependency version specifications, lockfile package versions and overrides are unchanged from the validated baseline. The supported install route is `npm ci --no-audit --no-fund`; an `--ignore-scripts` alternative is documented in the README. No new package has been introduced. The repository references npm packages and includes no installed npm package code or native binary. The included Heroicons geometry is explicitly mapped and carries its upstream MIT notice.
+
+First-party software is MIT with Copyright (c) 2026 Taewan Kim. This does not relicense dependencies. JSZip's MIT option is used. React/React DOM/scheduler and the separately documented MIT components keep their original notices under THIRD_PARTY_LICENSES. See THIRD_PARTY_NOTICES.md for included third-party code and relevant notices. The full 985-entry dependency register is not included in this repository. A locally generated bundle is distinct from the source repository. Any future compiled/native distribution needs a notice and covered-code closure for exactly what is shipped, particularly sharp/native Apache/LGPL components. It is outside the scope of this source release.
+
+Unused Firebase/other historical dependencies remain pinned to avoid unrelated version changes. They are not executed by the supported manual Studio workflow. No online vulnerability-advisory audit or blanket compatibility certification is claimed.

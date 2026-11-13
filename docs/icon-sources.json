@@ -1,0 +1,182 @@
+[
+  {
+    "component": "PlayIcon",
+    "source_svg": "play.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/play.svg",
+    "upstream_sha256": "88392682dbe1eac79795a5abe2c1b7a8eee73e696f9f770ffc7b0b851b898e8c",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "EditIcon",
+    "source_svg": "pencil-square.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/pencil-square.svg",
+    "upstream_sha256": "21da72fcd66af3e386d554259ff8517124d0a2270975ffa3a69b5aa926959d4c",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "PlusIcon",
+    "source_svg": "plus.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/plus.svg",
+    "upstream_sha256": "f3bd7870b4ac4bcb2153705981bdd9663f185c4563af496998803e245aca0d54",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "TrashIcon",
+    "source_svg": "trash.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/trash.svg",
+    "upstream_sha256": "54ec722a29978d7f64a81d6222e071f88b42d80179216b3b5beccfa9e1ec2135",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "SparklesIcon",
+    "source_svg": "sparkles.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/sparkles.svg",
+    "upstream_sha256": "5287e3645dfb7c059018a63415e17aec7d31724102187669e83b1730f42fc07e",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "MagicWandIcon",
+    "source_svg": "sparkles.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/sparkles.svg",
+    "upstream_sha256": "5287e3645dfb7c059018a63415e17aec7d31724102187669e83b1730f42fc07e",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "SaveIcon",
+    "source_svg": "document-check.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/document-check.svg",
+    "upstream_sha256": "7e3d2793ea15a155765f75797a4268b33b4d27f3c5cb0ce0ae0d2ab433605705",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "ResetIcon",
+    "source_svg": "arrow-path.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/arrow-path.svg",
+    "upstream_sha256": "b191971e5cd0347fb23ea91c87e7468b2a3759613d3dd928fdd326004a5542ae",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "DownloadIcon",
+    "source_svg": "arrow-down-tray.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/arrow-down-tray.svg",
+    "upstream_sha256": "03f6611b7a55dfc2f4fe9ab62da600ddab28e5aa418a168adfb066a76c23e44a",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "UploadIcon",
+    "source_svg": "arrow-up-tray.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/arrow-up-tray.svg",
+    "upstream_sha256": "db18c4af25690e8c6fbd510786b897ede74af0b21142b7f52e24eb44190518cc",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "UserIcon",
+    "source_svg": "user.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/user.svg",
+    "upstream_sha256": "73fa969e35b58fdf764fb90fce1f848c4ca4c4b20184ce8bf9bd442700456356",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "PhotoIcon",
+    "source_svg": "photo.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/photo.svg",
+    "upstream_sha256": "7097d901bd73841390a5a73f99193af198d3392bc84371e7063e520956eb7360",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "WebIcon",
+    "source_svg": "globe-alt.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/globe-alt.svg",
+    "upstream_sha256": "39b64fe05524f200c0f40de72e271ed96046c241c9f8d340e824424d160882b0",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "RefreshIcon",
+    "source_svg": "arrow-path.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/arrow-path.svg",
+    "upstream_sha256": "b191971e5cd0347fb23ea91c87e7468b2a3759613d3dd928fdd326004a5542ae",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "RouteIcon",
+    "source_svg": "arrow-right.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/arrow-right.svg",
+    "upstream_sha256": "2602a360312e14dc92da066780fed8e0b5eaf65e196b7d82b0e7cb5aed817015",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "CopyIcon",
+    "source_svg": "square-2-stack.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/square-2-stack.svg",
+    "upstream_sha256": "a1489116fddd28f9d7a7fe2904e1dcc2858c5dc474af534ed7db88ac9692beb4",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "ChevronLeftIcon",
+    "source_svg": "chevron-left.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/chevron-left.svg",
+    "upstream_sha256": "b6730529926d4e494f1115f09b7c8d32480edfd49cf02ceee0ca873a20de88ee",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  },
+  {
+    "component": "ChevronRightIcon",
+    "source_svg": "chevron-right.svg",
+    "version": "v2.2.0",
+    "url": "https://raw.githubusercontent.com/tailwindlabs/heroicons/v2.2.0/optimized/24/outline/chevron-right.svg",
+    "upstream_sha256": "db9cc118ca95a91b0ffe68dbf1052d5c5820bf5cc46b4f9f9109ac5bfc3a5fe6",
+    "license": "MIT",
+    "copyright": "Tailwind Labs, Inc.",
+    "adaptation": "SVG body preserved; JSX attribute casing, wrapper className and accessibility attributes"
+  }
+]

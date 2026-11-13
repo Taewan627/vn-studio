@@ -1,0 +1,53 @@
+{
+  "name": "vn-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit --incremental false",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=.server/server.cjs",
+    "start": "node .server/server.cjs",
+    "test": "node scripts/run-checks.mjs",
+    "test:example": "node scripts/check-example.mjs",
+    "test:browser": "node scripts/example-browser.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "@types/pdfkit": "^0.17.6",
+    "express": "^5.2.1",
+    "firebase": "12.10.0",
+    "jszip": "3.10.2",
+    "pdfkit": "^0.20.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.2",
+    "@playwright/test": "^1.64.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "10.6.1",
+    "esbuild": "^0.28.0",
+    "firebase-admin": "13.10.0",
+    "firebase-tools": "15.34.1",
+    "postcss": "8.5.31",
+    "tailwindcss": "3.4.19",
+    "tsx": "^4.22.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.4.5"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.6",
+    "proxy-addr": "2.0.8",
+    "protobufjs": "7.6.5",
+    "express@^5.2.1": {
+      "body-parser": "2.3.0"
+    }
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "license": "MIT"
+}

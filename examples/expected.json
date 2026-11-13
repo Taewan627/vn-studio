@@ -1,0 +1,46 @@
+{
+  "project_title": "The Beacon Ledger",
+  "entry_id": "entry",
+  "scene_count": 8,
+  "character_count": 2,
+  "edited_dialogue": "The beacon ledger is open. Edited locally.",
+  "edited_choice": {
+    "scene_id": "entry",
+    "choice_index": 0,
+    "target_scene_id": "join"
+  },
+  "paths": [
+    {
+      "entry_choice": "Garden route",
+      "route_after_edit": "join",
+      "scene_ids": [
+        "entry",
+        "join",
+        "workshop",
+        "decision",
+        "ending-blue"
+      ],
+      "ending_id": "ending-blue",
+      "ending_text": "The blue beacon welcomes the morning."
+    },
+    {
+      "entry_choice": "Tower route",
+      "route_after_edit": "tower",
+      "scene_ids": [
+        "entry",
+        "tower",
+        "join",
+        "workshop",
+        "decision",
+        "ending-amber"
+      ],
+      "ending_id": "ending-amber",
+      "ending_text": "The amber beacon lights the harbor."
+    }
+  ],
+  "synthetic_assets": "palette PNG (IHDR, PLTE, optional tRNS, IDAT, IEND); no text, EXIF or contact metadata chunks",
+  "original_before_edit_paths": [
+    "entry>garden>join>workshop>decision>ending-blue",
+    "entry>tower>join>workshop>decision>ending-amber"
+  ]
+}
