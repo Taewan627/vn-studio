@@ -107,4 +107,4 @@ The first-party licence is MIT, Copyright (c) 2026 Taewan Kim; see `Licence.txt`
 
 ## Citation
 
-Citation metadata is in `CITATION.cff`; see also `docs/citation.md`. The software DOI will be listed after the release is archived.
+Citation metadata is in `CITATION.cff`; see also `docs/citation.md`. Version 1.0.0 is archived on Zenodo: https://doi.org/10.5281/zenodo.24201796.

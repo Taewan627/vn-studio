@@ -3,8 +3,8 @@ message: "If you use this software, please cite it using the metadata from this 
 type: software
 title: "VN Studio"
 version: "1.0.0"
-# date-released: set when the v1.0.0 release is published
-# doi: to be added after the Zenodo release
+date-released: "2026-11-13"
+doi: 10.5281/zenodo.24201796
 license: MIT
 repository-code: "https://github.com/Taewan627/vn-studio"
 authors:
