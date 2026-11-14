@@ -2,6 +2,10 @@
 
 VN Studio is a local browser-based editor for creating, editing, saving and exporting branching visual-novel prototypes. It is research software for computational-narrative and interactive-storytelling workflows. Version 1.0.0 is released under the MIT licence; see `Licence.txt`. Copyright (c) 2026 Taewan Kim. Third-party works retain their original terms and notices.
 
+## Play the example in a browser
+
+A 2×2 set of controlled variants of the synthetic example (`examples/beacon.json`), each the unmodified offline HTML export of VN Studio 1.0.0, can be played in a web browser without installation: https://huggingface.co/spaces/devmeta/beacon-ledger-variants
+
 ## Supported scope
 
 - Import supported VisualNovel JSON with schema and reference checks; imports create a new local project.
