@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {test,before,after}from 'node:test';
-import {incomingSceneChoices,characterReferences,editorSafetyMessage}from '../services/editorReferences';
-import {validateVisualNovel}from '../services/validateVisualNovel';
+import {incomingSceneChoices,characterReferences,editorSafetyMessage}from '../src/services/editorReferences';
+import {validateVisualNovel}from '../src/services/validateVisualNovel';
 import {compileP06Hook,setupP06,cleanupP06}from './support/p06-hook-host';
 import {p06Fixture}from './support/p06-fixtures';
 

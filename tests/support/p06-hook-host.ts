@@ -2,7 +2,7 @@ import { build } from 'esbuild';
 import { createRequire } from 'node:module';
 import { mkdirSync,readFileSync,writeFileSync } from 'node:fs';
 import path from 'node:path';
-import type { VisualNovel } from '../../types';
+import type { VisualNovel } from '../../src/types';
 import { p06Fixture } from './p06-fixtures';
 
 const root=process.cwd();let hooks:any;let context:any;
@@ -14,7 +14,7 @@ export async function compileP06Hook(original=false){
   db:`export const loadVisualNovelData=(...a)=>globalThis.__P06_TEST__.db.load(...a);export const saveVisualNovelData=(...a)=>globalThis.__P06_TEST__.db.save(...a);export const saveProjectAndList=(...a)=>globalThis.__P06_TEST__.db.atomic(...a);export const removeFromDB=(...a)=>globalThis.__P06_TEST__.db.remove(...a);`,
  };
  const contents=original?readFileSync(path.join(root,'.phase1-local/p06/useVisualNovel.ts.BEFORE'),'utf8'):`export {useVisualNovel} from './useVisualNovel';`;
- const result=await build({stdin:{contents,resolveDir:path.join(root,'hooks'),sourcefile:original?'p06-original.ts':'p06-current.ts',loader:'ts'},bundle:true,platform:'node',format:'cjs',packages:'external',write:false,metafile:true,
+ const result=await build({stdin:{contents,resolveDir:path.join(root,'src','hooks'),sourcefile:original?'p06-original.ts':'p06-current.ts',loader:'ts'},bundle:true,platform:'node',format:'cjs',packages:'external',write:false,metafile:true,
   define:{setTimeout:'globalThis.__P06_TEST__.setTimeout',clearTimeout:'globalThis.__P06_TEST__.clearTimeout'},plugins:[{name:'p06-hook-doubles',setup(builder){
    builder.onResolve({filter:/^react$|^\.\.\/i18n\/LanguageProvider$|^\.\.\/utils\/db$/},args=>({path:args.path==='react'?'react':args.path.endsWith('LanguageProvider')?'language':'db',namespace:'p06-double'}));
    builder.onLoad({filter:/.*/,namespace:'p06-double'},args=>({contents:shims[args.path],loader:'js'}));

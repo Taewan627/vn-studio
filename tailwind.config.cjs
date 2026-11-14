@@ -1,7 +1,7 @@
 // RC04 UI tokens: dark neutral surfaces + one lime accent (mapped onto the existing
 // `indigo`/`yellow` utility names so no component logic changes). System fonts only.
 module.exports = {
-  content: ['./index.html', './App.tsx', './components/**/*.{ts,tsx}'],
+  content: ['./index.html', './src/App.tsx', './src/components/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {

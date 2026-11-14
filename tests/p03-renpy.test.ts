@@ -5,9 +5,9 @@ import { mkdirSync,writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import JSZip from 'jszip';
-import type { VisualNovel,Scene } from '../types';
-import { exportToRenpy } from '../services/exportService';
-import { prepareRenpyExportData } from '../services/renpyExportData';
+import type { VisualNovel,Scene } from '../src/types';
+import { exportToRenpy } from '../src/services/exportService';
+import { prepareRenpyExportData } from '../src/services/renpyExportData';
 import { inspectRenpy } from './support/inspectRenpy';
 
 const png='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aN1cAAAAASUVORK5CYII=';
@@ -36,7 +36,7 @@ before(async()=>{
   mkdirSync(directory,{recursive:true});for(const name of ['document','alert'])originals.set(name,Object.getOwnPropertyDescriptor(globalThis,name));
   const shims:Record<string,string>={react:`export const useRef=()=>({current:null});export const useState=v=>[v,()=>{}];`,language:`export const useLanguage=()=>({language:'en',t:s=>s});`,
     db:`const no=()=>{throw Error('Unexpected storage')};export const saveVisualNovelData=no,removeFromDB=no;`};
-  const built=await build({stdin:{contents:`export {useFileIO} from './hooks/useFileIO';`,resolveDir:process.cwd(),loader:'ts',sourcefile:'p03-hook-entry.ts'},bundle:true,platform:'node',format:'cjs',packages:'external',write:false,metafile:true,
+  const built=await build({stdin:{contents:`export {useFileIO} from './src/hooks/useFileIO';`,resolveDir:process.cwd(),loader:'ts',sourcefile:'p03-hook-entry.ts'},bundle:true,platform:'node',format:'cjs',packages:'external',write:false,metafile:true,
     plugins:[{name:'p03-ui-boundaries',setup(builder){
       builder.onResolve({filter:/^react$|^\.\.\/i18n\/LanguageProvider$|^\.\.\/utils\/db$/},args=>({path:args.path==='react'?'react':args.path.endsWith('LanguageProvider')?'language':'db',namespace:'p03-double'}));
       builder.onLoad({filter:/.*/,namespace:'p03-double'},args=>({contents:shims[args.path],loader:'js'}));

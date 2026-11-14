@@ -1,10 +1,10 @@
 # VN Studio
 
-VN Studio is a local browser-based editor for creating, editing, saving and exporting branching visual-novel prototypes. It is research software for computational-narrative and interactive-storytelling workflows. Version 1.0.0 is released under the MIT licence; see `Licence.txt`. Copyright (c) 2026 Taewan Kim. Third-party works retain their original terms and notices.
+VN Studio is a local browser-based editor for creating, editing, saving and exporting branching visual-novel prototypes. It is research software for computational-narrative and interactive-storytelling workflows. Version 1.0.1 is released under the MIT licence; see `LICENSE.txt`. Version 1.0.1 changes only the repository layout of 1.0.0: the application source is under `src/` and the licence file is `LICENSE.txt`; application behaviour and exported files are unchanged. Copyright (c) 2026 Taewan Kim. Third-party works retain their original terms and notices.
 
 ## Play the example in a browser
 
-A 2×2 set of controlled variants of the synthetic example (`examples/beacon.json`), each the unmodified offline HTML export of VN Studio 1.0.0, can be played in a web browser without installation: https://huggingface.co/spaces/devmeta/beacon-ledger-variants
+A 2×2 set of controlled variants of the synthetic example (`examples/beacon.json`), each the unmodified offline HTML export of VN Studio 1.0.0 (version 1.0.1 exports byte-identical files), can be played in a web browser without installation: https://huggingface.co/spaces/devmeta/beacon-ledger-variants
 
 ## Supported scope
 
@@ -21,7 +21,7 @@ The application inherits some online features from the parent application: AI im
 
 ## Prerequisites
 
-Use Node.js 22 and npm. The recorded environment for v1.0.0 is Windows 10 Pro 10.0.19045 (x64), Node.js 22.23.4, npm 10.9.9, Microsoft Edge 157.0.4341.46, Google Chrome 157.0.8103.52 and Playwright 1.64.1 (pinned by the lockfile). These are the environment in which the results below were recorded, not a claim that all commands pass in every environment.
+Use Node.js 22 and npm. The recorded environment for v1.0.1 is Windows 10 Pro 10.0.19045 (x64), Node.js 22.23.4, npm 10.9.9, Microsoft Edge 157.0.4341.46, Google Chrome 157.0.8103.52 and Playwright 1.64.1 (pinned by the lockfile). These are the environment in which the results below were recorded, not a claim that all commands pass in every environment.
 
 A Chromium-based browser must already be installed; the scripts do not download browsers. Set `EDGE_EXECUTABLE` if Edge is outside the two standard Windows installation locations. To run the browser suite with Chrome, set `EDGE_EXECUTABLE` to the Chrome executable and `VN_BROWSER_OUTPUT` to a new directory under the repository root.
 
@@ -77,7 +77,7 @@ npm run test:browser
 
 Run `npm run build` before `npm run test:browser`. Tests create ignored artifacts under `.local-validation/` by default. The optional variables `VN_TEST_OUTPUT`, `VN_EXAMPLE_OUTPUT` and `VN_BROWSER_OUTPUT` can point to separate writable directories; keep outputs under the repository root so that module resolution works. `npm run test:browser` expects an empty output directory: before running it again in the same copy, delete `.local-validation/browser` or set `VN_BROWSER_OUTPUT` to a new directory.
 
-Recorded results for v1.0.0 in the environment above:
+Recorded results for v1.0.1 in the environment above:
 
 | Command | Result |
 |---|---|
@@ -107,8 +107,8 @@ The lockfile retains existing unused and optional dependencies to avoid unverifi
 
 ## Licence
 
-The first-party licence is MIT, Copyright (c) 2026 Taewan Kim; see `Licence.txt`, `THIRD_PARTY_NOTICES.md` and `docs/license-scope.md`.
+The first-party licence is MIT, Copyright (c) 2026 Taewan Kim; see `LICENSE.txt`, `THIRD_PARTY_NOTICES.md` and `docs/license-scope.md`.
 
 ## Citation
 
-Citation metadata is in `CITATION.cff`; see also `docs/citation.md`. Version 1.0.0 is archived on Zenodo: https://doi.org/10.5281/zenodo.24201796.
+Citation metadata is in `CITATION.cff`; see also `docs/citation.md`. All versions are archived on Zenodo: https://doi.org/10.5281/zenodo.24201795 (version 1.0.0: https://doi.org/10.5281/zenodo.24201796).

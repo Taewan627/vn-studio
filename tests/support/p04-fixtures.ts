@@ -1,4 +1,4 @@
-import type { VisualNovel, Scene } from '../../types';
+import type { VisualNovel, Scene } from '../../src/types';
 
 export const P04_PIXEL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aN1cAAAAASUVORK5CYII=';
 export const P04_INJECTION = '</script><script>globalThis.__p04Injection=1</script><img src="https://synthetic.invalid/probe" onerror="globalThis.__p04Injection=2"> & 日本語';

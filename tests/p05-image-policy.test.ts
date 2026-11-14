@@ -8,10 +8,10 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { IncomingMessage, ServerResponse } from 'node:http';
 import { PassThrough } from 'node:stream';
 import path from 'node:path';
-import { createQuickDemo } from '../data/quickDemo';
-import { prepareQuickStory } from '../services/quickStory';
-import { isImageGenerationEnabled } from '../services/imageGenerationPolicy';
-import { validateVisualNovel } from '../services/validateVisualNovel';
+import { createQuickDemo } from '../src/data/quickDemo';
+import { prepareQuickStory } from '../src/services/quickStory';
+import { isImageGenerationEnabled } from '../src/services/imageGenerationPolicy';
+import { validateVisualNovel } from '../src/services/validateVisualNovel';
 
 // No listening socket or browser. Actual hooks/components, actual service code and
 // in-process Express dispatch; provider/storage/DOM I/O are explicit synthetic doubles.
@@ -81,7 +81,7 @@ before(async () => {
       export const generateStoryProposals=async()=>{c().calls.text++;return []};
       export const summarizeStoryToNovel=async()=>{c().calls.text++;return 'Synthetic summary'};
       export const chatWithCharacter=async()=>{c().calls.text++;return {text:'Synthetic response'}};`,
-    processing: `export {fileToBase64} from ${JSON.stringify(path.join(root, 'utils/imageProcessing.ts').replaceAll('\\', '/'))};
+    processing: `export {fileToBase64} from ${JSON.stringify(path.join(root, 'src/utils/imageProcessing.ts').replaceAll('\\', '/'))};
       export const removeCharacterImageBackground=async()=>{globalThis.__P05_TEST__.calls.local++;return 'data:image/png;base64,LOCAL'};
       export const resizeAndCompressImage=async u=>u;`,
     loading: `export const decodeQuickImage=async u=>{globalThis.__P05_TEST__.calls.decode++;return {src:u}};
@@ -102,19 +102,19 @@ before(async () => {
     writeFileSync(path.join(directory, name + '.meta.json'), JSON.stringify(result.metafile, null, 2));
     return createRequire(import.meta.url)(file);
   }
-  ui = await compile('ui', `export {useAiOperations} from './hooks/useAiOperations';
-    export {useQuickImages} from './hooks/useQuickImages'; export {useQuickPlayback} from './hooks/useQuickPlayback';
-    export {CharacterList} from './components/CharacterList'; export {SceneEditor} from './components/SceneEditor';
-    export {QuickImageStatus} from './components/QuickImageStatus'; export {default as GamePlayer} from './components/GamePlayer';`,
+  ui = await compile('ui', `export {useAiOperations} from './src/hooks/useAiOperations';
+    export {useQuickImages} from './src/hooks/useQuickImages'; export {useQuickPlayback} from './src/hooks/useQuickPlayback';
+    export {CharacterList} from './src/components/CharacterList'; export {SceneEditor} from './src/components/SceneEditor';
+    export {QuickImageStatus} from './src/components/QuickImageStatus'; export {default as GamePlayer} from './src/components/GamePlayer';`,
     { react: 'react', '../i18n/LanguageProvider': 'language', '../i18n/catalog': 'catalog',
       '../services/geminiService': 'service', '../utils/imageProcessing': 'processing',
       '../services/quickImageLoading': 'loading', './ImagePreviewModal': 'modal' },
     { setTimeout: 'globalThis.__P05_TEST__.setTimeout', clearTimeout: 'globalThis.__P05_TEST__.clearTimeout', clearInterval: 'globalThis.__P05_TEST__.clearTimeout' });
   delete g.window;
-  serverService = await compile('server-service', `export * from './services/geminiService';`, { './i18n/catalog.js': 'catalog', '../i18n/catalog.js': 'catalog' });
-  clientService = await compile('client-service', `export * from './services/geminiService';`,
+  serverService = await compile('server-service', `export * from './src/services/geminiService';`, { './i18n/catalog.js': 'catalog', '../i18n/catalog.js': 'catalog' });
+  clientService = await compile('client-service', `export * from './src/services/geminiService';`,
     { '../i18n/catalog.js': 'catalog' }, { window: '{}', __VN_AI_IMAGE_GENERATION_ENABLED__: 'false' });
-  appModule = await compile('app', `export {createApiApp} from './server/app';`,
+  appModule = await compile('app', `export {createApiApp} from './src/server/app';`,
     { '../services/geminiService.js': 'service', '../research/config.js': 'research', './protection.js': 'protection' });
 });
 

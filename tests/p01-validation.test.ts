@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { test, after } from 'node:test';
-import type { VisualNovel } from '../types';
-import { createQuickDemo } from '../data/quickDemo';
-import { validateVisualNovel, type VisualNovelValidationCode, type VisualNovelValidationResult } from '../services/validateVisualNovel';
+import type { VisualNovel } from '../src/types';
+import { createQuickDemo } from '../src/data/quickDemo';
+import { validateVisualNovel, type VisualNovelValidationCode, type VisualNovelValidationResult } from '../src/services/validateVisualNovel';
 
 // Authored synthetic data only. No app/server/browser, private exports, or provider mocks.
 function studio(): VisualNovel {

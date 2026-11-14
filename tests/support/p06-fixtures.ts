@@ -1,4 +1,4 @@
-import type { VisualNovel,Scene } from '../../types';
+import type { VisualNovel,Scene } from '../../src/types';
 export const P06_PNG='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aN1cAAAAASUVORK5CYII=';
 export const P06_GIF='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 export function p06Fixture():VisualNovel{

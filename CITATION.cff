@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
 type: software
 title: "VN Studio"
-version: "1.0.0"
-date-released: "2026-11-13"
-doi: 10.5281/zenodo.24201796
+version: "1.0.1"
+date-released: "2026-11-14"
+doi: 10.5281/zenodo.24201795
 license: MIT
 repository-code: "https://github.com/Taewan627/vn-studio"
 authors:

@@ -1,7 +1,7 @@
 import React,{Profiler,useState}from 'react';
 import{createRoot}from 'react-dom/client';
-import{GenreImage}from '../../components/GenreImage';
-import{isImageGenerationEnabled}from '../../services/imageGenerationPolicy';
+import{GenreImage}from '../../src/components/GenreImage';
+import{isImageGenerationEnabled}from '../../src/services/imageGenerationPolicy';
 import{APP_PNG}from './integrated-app-fixtures';
 const state={commits:0};(window as any).__P07_STATE__=state;
 function Harness(){

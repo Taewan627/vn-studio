@@ -4,10 +4,10 @@ import { build } from 'esbuild';
 import { createRequire } from 'node:module';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import type { VisualNovel } from '../types';
-import { createQuickDemo } from '../data/quickDemo';
-import type { useVisualNovel } from '../hooks/useVisualNovel';
-import type { useFileIO } from '../hooks/useFileIO';
+import type { VisualNovel } from '../src/types';
+import { createQuickDemo } from '../src/data/quickDemo';
+import type { useVisualNovel } from '../src/hooks/useVisualNovel';
+import type { useFileIO } from '../src/hooks/useFileIO';
 
 // Compile-check the same setter wiring used by App; the runtime host below uses doubles.
 function wiring(model: ReturnType<typeof useVisualNovel>): Parameters<typeof useFileIO>[0] {
@@ -54,7 +54,7 @@ before(async () => {
       export const exportToRenpy=unused, exportToHtml=unused, prepareWebPackageData=unused;`,
   };
   const result = await build({
-    stdin: { contents: `export {useVisualNovel} from './hooks/useVisualNovel'; export {useFileIO} from './hooks/useFileIO';`,
+    stdin: { contents: `export {useVisualNovel} from './src/hooks/useVisualNovel'; export {useFileIO} from './src/hooks/useFileIO';`,
       resolveDir: root, sourcefile: 'p01b-hook-entry.ts', loader: 'ts' },
     bundle: true, platform: 'node', format: 'cjs', packages: 'external', write: false, metafile: true,
     define: { setTimeout: 'globalThis.__P01B_TEST__.setTimeout', clearTimeout: 'globalThis.__P01B_TEST__.clearTimeout' },

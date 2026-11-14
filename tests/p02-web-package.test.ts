@@ -5,10 +5,10 @@ import { createRequire } from 'node:module';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import JSZip from 'jszip';
-import type { VisualNovel } from '../types';
-import { prepareWebPackageAssets, WebPackageAssetError } from '../services/webPackageAssets';
-import { prepareWebPackageData } from '../services/exportService';
-import { fileToBase64 } from '../utils/imageProcessing';
+import type { VisualNovel } from '../src/types';
+import { prepareWebPackageAssets, WebPackageAssetError } from '../src/services/webPackageAssets';
+import { prepareWebPackageData } from '../src/services/exportService';
+import { fileToBase64 } from '../src/utils/imageProcessing';
 
 // Authored synthetic fixtures only. Exercise the actual Web ZIP download handler,
 // then independently reopen its bytes with JSZip. DOM/FileReader/storage are
@@ -54,7 +54,7 @@ before(async()=>{
     language:`export const useLanguage=()=>({language:'en',t:s=>s});`,
     db:`const forbidden=()=>{throw Error('Storage outside Web ZIP test scope')};export const saveVisualNovelData=forbidden,removeFromDB=forbidden;`,
   };
-  const result=await build({stdin:{contents:`export {useFileIO} from './hooks/useFileIO';`,resolveDir:process.cwd(),loader:'ts',sourcefile:'p02-hook-entry.ts'},
+  const result=await build({stdin:{contents:`export {useFileIO} from './src/hooks/useFileIO';`,resolveDir:process.cwd(),loader:'ts',sourcefile:'p02-hook-entry.ts'},
     bundle:true,platform:'node',format:'cjs',packages:'external',write:false,metafile:true,
     plugins:[{name:'p02-ui-boundaries',setup(builder){
       builder.onResolve({filter:/^react$|^\.\.\/i18n\/LanguageProvider$|^\.\.\/utils\/db$/},args=>({

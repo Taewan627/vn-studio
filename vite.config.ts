@@ -15,8 +15,8 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, '.'),
-          'sharp': path.resolve(__dirname, 'services/serverOnly.ts'),
+          '@': path.resolve(__dirname, 'src'),
+          'sharp': path.resolve(__dirname, 'src/services/serverOnly.ts'),
         }
       }
     };

@@ -1,11 +1,11 @@
 # Citation metadata
 
 Software title: VN Studio.
-Version: 1.0.0.
+Version: 1.0.1.
 Authors: Taewan Kim and Taehoon Kim (Graduate School of Virtual Convergence, Sogang University).
 Repository: https://github.com/Taewan627/vn-studio
 Software license: MIT. Copyright notice: Copyright (c) 2026 Taewan Kim.
 The year is the notice year of this MIT distribution, not an initial-development-year claim.
-Software DOI (version 1.0.0): https://doi.org/10.5281/zenodo.24201796 (all versions: https://doi.org/10.5281/zenodo.24201795).
+Software DOI for all versions: https://doi.org/10.5281/zenodo.24201795 (version 1.0.0: https://doi.org/10.5281/zenodo.24201796).
 
 Machine-readable citation metadata is in `CITATION.cff` at the repository root. No academic-user or institutional-adoption claim is made.

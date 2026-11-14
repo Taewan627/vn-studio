@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { test,after } from 'node:test';
 import { Script } from 'node:vm';
-import { exportToHtml } from '../services/exportService';
-import { prepareWebPackageAssets,WebPackageAssetError } from '../services/webPackageAssets';
+import { exportToHtml } from '../src/services/exportService';
+import { prepareWebPackageAssets,WebPackageAssetError } from '../src/services/webPackageAssets';
 import { p04Fixture,P04_INJECTION } from './support/p04-fixtures';
 
 // Generation/static tests only: runtime behavior is tested by the real browser suite.
